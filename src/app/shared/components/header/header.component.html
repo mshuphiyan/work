@@ -23,19 +23,19 @@
                             <mat-icon class="mat-18">person_outline</mat-icon>
                         </button>
                         <mat-menu #menu="matMenu">
-                            <button mat-menu-item>
+                            <button mat-menu-item (click)="openProfile()">
                                 <mat-icon class="mat-18">account_circle</mat-icon>
                                 Profile
                             </button>
-                            <button mat-menu-item>
+                            <button mat-menu-item (click)="openSettings()">
                                 <mat-icon class="mat-18">settings</mat-icon>
                                 Settings
                             </button>
-                            <button mat-menu-item>
+                            <button mat-menu-item (click)="openAbout()">
                                 <mat-icon class="mat-18">info</mat-icon>
                                 About
                             </button>
-                            <button mat-menu-item>
+                            <button mat-menu-item (click)="logout()">
                                 <mat-icon class="mat-18">exit_to_app</mat-icon>
                                 Sign Out
                             </button>
