@@ -7,6 +7,7 @@ import { routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { LoginModule } from './login/login.module';
 import { DefaultModule } from './layouts/default/default.module';
 import { DialogModule } from './core/dialog/dialog.module';
 import { UserprofileModule } from './modules/admin/userprofile/userprofile.module';
@@ -28,6 +29,7 @@ import { reducers } from './store';
     BrowserAnimationsModule,
     MatDialogModule,
     RouterModule.forRoot(routes),
+    LoginModule,
     DefaultModule,
     DialogModule,
     AboutModule,
