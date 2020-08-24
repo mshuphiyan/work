@@ -26,6 +26,8 @@
     "@ngrx/router-store": "^10.0.0",
     "@ngrx/store": "^10.0.0",
     "@ngrx/store-devtools": "^10.0.0",
+    "ag-grid-angular": "^23.2.1",
+    "ag-grid-community": "^23.2.1",
     "highcharts": "^8.2.0",
     "highcharts-angular": "^2.7.0",
     "rxjs": "~6.5.5",

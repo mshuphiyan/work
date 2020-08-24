@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DevicesComponent } from './devices.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
+import { AgGridModule } from 'ag-grid-angular';
+
+import { DevicesComponent } from './devices.component';
 
 
 @NgModule({
   declarations: [DevicesComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MatMenuModule,
+    MatIconModule,
+    AgGridModule.withComponents([])
   ],
   exports: [DevicesComponent]
 })
