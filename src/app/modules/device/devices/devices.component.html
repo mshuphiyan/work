@@ -1,21 +1,21 @@
 <div>
-        <button mat-button flex >
+        <button mat-button flex (click)="addDevice()">
             <mat-icon class="mat-18">add</mat-icon>
             <span class="devicebtn">Add Device</span>
         </button>
-        <button mat-button>
+        <button mat-button (click)="deleteDevices()">
             <mat-icon class="mat-18">delete</mat-icon>
             Delete
         </button>
-        <button mat-button>
+        <button mat-button (click)="refreshDevices()">
             <mat-icon class="mat-18">loop</mat-icon>
             Refresh
         </button>
-        <button mat-button>
+        <button mat-button (click)="startDevices()">
             <mat-icon class="mat-18">not_started</mat-icon>
             Start Devices
         </button>
-        <button mat-button>
+        <button mat-button (click)="stopDevices()">
             <mat-icon class="mat-18">stop</mat-icon>
             Stop Devices
         </button>

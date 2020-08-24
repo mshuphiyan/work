@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-devices',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevicesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
@@ -38,4 +39,31 @@ export class DevicesComponent implements OnInit {
       { make: 'Porsche', model: 'Boxter', price: 72000 }
   ];
 
+  addDevice() {
+    this._snackBar.open("Device added successfully.", "action", {
+      duration: 2000,
+    });
+  }
+
+  deleteDevices() {
+    this._snackBar.open("Devices deleted successfully.", "action", {
+      duration: 2000,
+    });
+  }
+
+  startDevices() {
+    this._snackBar.open("Devices started successfully.", "action", {
+      duration: 2000,
+    });
+  }
+
+  stopDevices() {
+    this._snackBar.open("Devices stopped successfully.", "action", {
+      duration: 2000,
+    });
+  }
+
+  refreshDevices() {
+
+  }
 }
