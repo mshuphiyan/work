@@ -8,7 +8,11 @@ export interface DeviceState {
 }
 
 export const initialState: DeviceState = {
-    data: [],
+    data: [{
+        id: 1,
+        name: "Device",
+        manufacturer: "Sonos"
+    }],
     loaded: false,
     loading: false,
 };

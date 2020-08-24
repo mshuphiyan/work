@@ -10,11 +10,9 @@ import { DefaultModule } from './layouts/default/default.module';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './store';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   exports: [
   ],
