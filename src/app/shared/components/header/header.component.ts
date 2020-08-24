@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { UserprofileComponent } from '../../../modules/admin/userprofile/userprofile.component';
+import { AboutComponent } from '../../about/about.component';
 
 @Component({
   selector: 'app-header',
@@ -27,13 +28,11 @@ export class HeaderComponent implements OnInit {
   }
 
   openSettings() {
-    console.log( 'open dialog ');
     this.dialog.open(UserprofileComponent);
   }
 
   openAbout() {
-    console.log( 'open dialog ');
-    this.dialog.open(UserprofileComponent);
+    this.dialog.open(AboutComponent);
   }
 
   logout(){

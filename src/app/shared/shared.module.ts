@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,7 +16,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { AreaComponent } from './widgets/area/area.component';
 import { CardComponent } from './widgets/card/card.component';
-import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +24,13 @@ import { AboutComponent } from './about/about.component';
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    AboutComponent
   ],
   imports: [
     CommonModule,
     MatDividerModule,
     MatToolbarModule,
     MatIconModule,
+    MatDialogModule,
     MatButtonModule,
     FlexLayoutModule,
     MatMenuModule,

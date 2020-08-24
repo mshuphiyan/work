@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module';
 import { DialogModule } from './core/dialog/dialog.module';
 import { UserprofileModule } from './modules/admin/userprofile/userprofile.module';
+import { AboutModule } from './shared/about/about.module';
 
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './store';
@@ -29,6 +30,7 @@ import { reducers } from './store';
     RouterModule.forRoot(routes),
     DefaultModule,
     DialogModule,
+    AboutModule,
     UserprofileModule,
     StoreModule.forRoot({}),
     StoreModule.forFeature('devices', reducers)
