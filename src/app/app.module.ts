@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DefaultModule } from './layouts/default/default.module';
 
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './store';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { DefaultModule } from './layouts/default/default.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule
+    DefaultModule,
+    StoreModule.forRoot({}),
+    StoreModule.forFeature('devices', reducers)
   ],
   providers: [],
   bootstrap: [AppComponent]
