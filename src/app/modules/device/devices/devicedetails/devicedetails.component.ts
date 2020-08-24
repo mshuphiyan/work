@@ -12,4 +12,15 @@ export class DevicedetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteDevice() {
+
+  }
+
+  startDevice() {
+
+  }
+
+  stopDevice() {
+    
+  }
 }

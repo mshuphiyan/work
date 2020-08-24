@@ -58,11 +58,6 @@ export class DevicesComponent implements OnInit {
 
   onRowSelected(event: any) {
     this.router.navigate(['/app-devicedetails']);
-    // const rows = this.gridApi.getSelectedRows();
-    // if(rows.length > 0)
-    //   console.log(rows[rows.length - 1]);
-    // else
-    //   console.log('No rows selected');
   }
 
   onSelectionChanged(event: any) {
