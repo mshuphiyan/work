@@ -8,9 +8,13 @@ import { DevicedriverComponent } from '../device/devicedriver/devicedriver.compo
 import { DevicemanagerComponent } from '../device/devicemanager/devicemanager.component';
 import { DevicesessionComponent } from '../device/devicesession/devicesession.component';
 import { PtodaComponent } from '../device/ptoda/ptoda.component';
+import { BatchpredictionComponent } from '../analytics/batchprediction/batchprediction.component';
+import { MortalityanalyticsComponent } from '../analytics/mortalityanalytics/mortalityanalytics.component';
+import { ContactsComponent } from '../contacts/contacts.component';
+import { LeadsComponent } from '../leads/leads.component';
 
-import { adddevicesroutes } from './devices/adddevice/adddevice.routes';
-import { devicedetailsroutes } from './devices/devicedetails/devicedetails.routes';
+// import { adddevicesroutes } from './devices/adddevice/adddevice.routes';
+// import { devicedetailsroutes } from './devices/devicedetails/devicedetails.routes';
 
 export const devicesroutes: Routes = [{
     path: 'app-devices',
@@ -39,5 +43,17 @@ export const devicesroutes: Routes = [{
     }, {
       path: 'app-ptoda',
       component: PtodaComponent
+    }, {
+      path: 'app-mortalityanalysis',
+      component: MortalityanalyticsComponent
+    }, {
+      path: 'app-batchprediction',
+      component: BatchpredictionComponent
+    }, {
+      path: 'app-contacts',
+      component: ContactsComponent
+    }, {
+      path: 'app-leads',
+      component: LeadsComponent
     }
 ];
