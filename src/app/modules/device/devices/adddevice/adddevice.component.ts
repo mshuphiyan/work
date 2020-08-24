@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-adddevice',
@@ -8,7 +10,9 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class AdddeviceComponent implements OnInit {
 
-  constructor() {}
+  constructor(private _snackBar: MatSnackBar,
+    private route: ActivatedRoute,
+    private router: Router) {}
 
   addNewDevice = new FormGroup({
     deviceName: new FormControl(),
@@ -29,10 +33,14 @@ export class AdddeviceComponent implements OnInit {
   }
 
   back() {
-
+    this.router.navigate(['/app-devices']);
   }
 
   addDevice() {
-
+    this._snackBar.open("Devices added successfully.", "action", {
+      duration: 2000,
+    });
+    console.log(this.addNewDevice.value);
+    this.router.navigate(['/app-devicedetails']);
   }
 }

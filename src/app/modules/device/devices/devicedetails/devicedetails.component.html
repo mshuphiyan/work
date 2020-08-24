@@ -1,4 +1,8 @@
 <div>
+    <button mat-button (click)="updateDevice()">
+        <mat-icon class="mat-18">save</mat-icon>
+        <span class="btn-action">Update</span>
+    </button>
     <button mat-button (click)="deleteDevice()">
         <mat-icon class="mat-18">delete</mat-icon>
         <span class="btn-action">Delete</span>
@@ -13,3 +17,79 @@
     </button>
 </div>
 <br>
+
+<div>
+        <mat-card-content>
+                <form>
+                        <mat-form-field>
+                                <mat-label>Device Name</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+            
+                            <mat-form-field>
+                                <mat-label>Model</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Manufacturer</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+            
+                            <mat-form-field>
+                                <mat-label>Device Type</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Description</mat-label>
+                                <textarea matInput ></textarea>
+                            </mat-form-field>
+                            <br>
+                            <!-- Drop Downs -->
+            
+                            <mat-form-field>
+                                <mat-label>Location</mat-label>
+                                <mat-select >
+                                    <mat-option value="option">Option</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Driver Manager</mat-label>
+                                <mat-select >
+                                    <mat-option value="option">Option</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Driver Name</mat-label>
+                                <mat-select > 
+                                    <mat-option value="option">Option</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Connection Type</mat-label>
+                                <mat-select >
+                                    <mat-option value="option">Option</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Port Number</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>IP Address</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <!-- check box -->
+                            <!-- <mat-form-field>
+                                <mat-checkbox>Device Status</mat-checkbox>
+                            </mat-form-field> -->
+            
+                </form>
+            </mat-card-content>
+    
+</div>

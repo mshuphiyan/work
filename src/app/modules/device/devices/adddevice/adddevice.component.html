@@ -1,10 +1,17 @@
 <div>
     <button mat-button (click)="back()">
         <mat-icon class="mat-18">backspace</mat-icon>
-        <span class="btn-action" style="width: 10em; display: relative; margin-right: 5px;">Back</span>
+        <span class="btn-action">Back</span>
+    </button>
+    <button mat-button (click)="addDevice()">
+        <mat-icon class="mat-18">add</mat-icon>
+        <span class="btn-action">Add Device</span>
+    </button>
+    <button mat-button (click)="back()">
+        <mat-icon class="mat-18">cancel</mat-icon>
+        <span class="btn-action">Cancel</span>
     </button>
 </div>
-<br>
 <mat-divider></mat-divider>
 <br>
 <div>
@@ -76,12 +83,10 @@
                             <mat-label>Port Number</mat-label>
                             <input matInput>
                         </mat-form-field>
-                        <br>
                         <mat-form-field>
                             <mat-label>IP Address</mat-label>
                             <input matInput>
                         </mat-form-field>
-                        <br>
                         <!-- check box -->
                         <!-- <mat-form-field>
                             <mat-checkbox>Device Status</mat-checkbox>
@@ -90,15 +95,15 @@
             </form>
         </mat-card-content>
 
-        <mat-card-actions>
-            <button mat-button (click)="addDevice()">
-                <mat-icon class="mat-18">add</mat-icon>
-                <span class="btn-action">Add Device</span>
-            </button>
-            <button mat-button>
-                <mat-icon class="mat-18">cancel</mat-icon>
-                <span class="btn-action">Cancel</span>
-            </button>
-        </mat-card-actions>
+        <!-- <mat-card-actions>
+                <button mat-button (click)="addDevice()">
+                        <mat-icon class="mat-18">add</mat-icon>
+                        <span class="btn-action">Add Device</span>
+                    </button>
+                    <button mat-button (click)="back()">
+                        <mat-icon class="mat-18">cancel</mat-icon>
+                        <span class="btn-action">Cancel</span>
+                    </button>
+        </mat-card-actions> -->
     </mat-card>
 </div>
