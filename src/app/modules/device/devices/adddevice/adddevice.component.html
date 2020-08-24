@@ -16,77 +16,77 @@
         </mat-card-header>
 
         <mat-card-content>
-            <form [formGroup]="addNewDevice">
-                <mat-form-field>
-                    <mat-label>Device Name</mat-label>
-                    <input matInput formControlName="deviceName">
-                </mat-form-field>
-
-                <mat-form-field>
-                    <mat-label>Model</mat-label>
-                    <input matInput formControlName="deviceModel">
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>Manufacturer</mat-label>
-                    <input matInput formControlName="manufacturer">
-                </mat-form-field>
-
-                <mat-form-field>
-                    <mat-label>Device Type</mat-label>
-                    <input matInput formControlName="deviceType">
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>Description</mat-label>
-                    <textarea matInput formControlName="description"></textarea>
-                </mat-form-field>
-                <br>
-                <!-- Drop Downs -->
-
-                <mat-form-field>
-                    <mat-label>Location</mat-label>
-                    <mat-select formControlName="location">
-                        <mat-option value="option">Option</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>Driver Manager</mat-label>
-                    <mat-select formControlName="driverManager">
-                        <mat-option value="option">Option</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>Driver Name</mat-label>
-                    <mat-select formControlName="driverName"> 
-                        <mat-option value="option">Option</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>Connection Type</mat-label>
-                    <mat-select formControlName="connectionType">
-                        <mat-option value="option">Option</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>Port Number</mat-label>
-                    <input matInput formControlName="portNumber">
-                </mat-form-field>
-                <br>
-                <mat-form-field>
-                    <mat-label>IP Address</mat-label>
-                    <input matInput formControlName="ipAddress">
-                </mat-form-field>
-                <br>
-                <!-- check box -->
-                <mat-form-field>
-                    <mat-checkbox formControlName="deviceStatus">Device Status</mat-checkbox>
-                </mat-form-field>
-
+            <form>
+                    <mat-form-field>
+                            <mat-label>Device Name</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+        
+                        <mat-form-field>
+                            <mat-label>Model</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Manufacturer</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+        
+                        <mat-form-field>
+                            <mat-label>Device Type</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Description</mat-label>
+                            <textarea matInput ></textarea>
+                        </mat-form-field>
+                        <br>
+                        <!-- Drop Downs -->
+        
+                        <mat-form-field>
+                            <mat-label>Location</mat-label>
+                            <mat-select >
+                                <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Driver Manager</mat-label>
+                            <mat-select >
+                                <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Driver Name</mat-label>
+                            <mat-select > 
+                                <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Connection Type</mat-label>
+                            <mat-select >
+                                <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Port Number</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>IP Address</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <br>
+                        <!-- check box -->
+                        <!-- <mat-form-field>
+                            <mat-checkbox>Device Status</mat-checkbox>
+                        </mat-form-field> -->
+        
             </form>
         </mat-card-content>
 
