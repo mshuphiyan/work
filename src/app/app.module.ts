@@ -9,10 +9,20 @@ import { DefaultModule } from './layouts/default/default.module';
 
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './store';
+import { UserComponent } from './modules/admin/user/user.component';
+import { UsersettingsComponent } from './modules/admin/usersettings/usersettings.component';
+import { UserprofileComponent } from './modules/admin/userprofile/userprofile.component';
+import { MortalityanalyticsComponent } from './modules/analytics/mortalityanalytics/mortalityanalytics.component';
+import { BatchpredictionComponent } from './modules/analytics/batchprediction/batchprediction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    UserComponent,
+    UsersettingsComponent,
+    UserprofileComponent,
+    MortalityanalyticsComponent,
+    BatchpredictionComponent,
   ],
   exports: [
   ],
