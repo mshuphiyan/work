@@ -9,15 +9,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
-import { AgGridModule } from 'ag-grid-angular';
+import { AdddevicemanagerComponent } from './adddevicemanager.component';
 
-import { AdddevicelocationModule } from './adddevicelocation/adddevicelocation.module';
-import { EditdevicelocationModule } from './editdevicelocation/editdevicelocation.module';
 
-import { DevicelocationComponent } from './devicelocation.component';
 
 @NgModule({
-  declarations: [DevicelocationComponent],
+  declarations: [AdddevicemanagerComponent],
   imports: [
     CommonModule,
     MatMenuModule,
@@ -28,10 +25,7 @@ import { DevicelocationComponent } from './devicelocation.component';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    AdddevicelocationModule,
-    EditdevicelocationModule,
-    AgGridModule.withComponents([])
   ],
-  exports: [DevicelocationComponent]
+  exports: [AdddevicemanagerComponent]
 })
-export class DevicelocationModule { }
+export class AdddevicemanagerModule { }

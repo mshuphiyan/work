@@ -2,18 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
-@Component({
-  selector: 'app-adddevicelocation',
-  templateUrl: './adddevicelocation.component.html',
-  styleUrls: ['./adddevicelocation.component.scss']
-})
-export class AdddevicelocationComponent implements OnInit {
 
-  constructor(
-    private _snackBar: MatSnackBar,
+@Component({
+  selector: 'app-adddevicemanager',
+  templateUrl: './adddevicemanager.component.html',
+  styleUrls: ['./adddevicemanager.component.scss']
+})
+export class AdddevicemanagerComponent implements OnInit {
+
+  constructor(private _snackBar: MatSnackBar,
     private route: ActivatedRoute,
-    private router: Router
-  ) { }
+    private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,21 +24,20 @@ export class AdddevicelocationComponent implements OnInit {
     description: new FormControl()
   });
 
-  addLocation() {
-    this._snackBar.open("Device location added successfully.", "Close", {
+  addManager() {
+    this._snackBar.open("Device Manager added successfully.", "action", {
       duration: 2000,
     });
   }
 
   cancel(){
-    this.router.navigate(['/app-devicelocation']);
+    this.router.navigate(['/app-devicemanager']);
   }
 
-  deleteLocation(){
-    this._snackBar.open("Device Manager deleted successfully.", "Close", {
+  deleteManager(){
+    this._snackBar.open("Device Manager deleted successfully.", "action", {
       duration: 2000,
     });
-    this.router.navigate(['/app-devicelocation']);
+    this.router.navigate(['/app-adddevicemanager']);
   }
-
 }

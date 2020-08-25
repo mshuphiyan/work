@@ -9,6 +9,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
+import { AgGridModule } from 'ag-grid-angular';
+
+import { AdddevicemanagerModule } from './adddevicemanager/adddevicemanager.module';
+import { EditdevicemanagerModule } from './editdevicemanager/editdevicemanager.module';
+
 import { DevicemanagerComponent } from './devicemanager.component';
 @NgModule({
   declarations: [DevicemanagerComponent],
@@ -22,6 +27,9 @@ import { DevicemanagerComponent } from './devicemanager.component';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
+    AdddevicemanagerModule,
+    EditdevicemanagerModule,
+    AgGridModule.withComponents([])
   ],
   exports: [DevicemanagerComponent]
 })

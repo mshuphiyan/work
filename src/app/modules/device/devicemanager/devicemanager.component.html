@@ -1,44 +1,25 @@
 <div>
-        <button mat-button (click)="addManager()">
-            <mat-icon class="mat-18">save</mat-icon>
-            <span class="btn-action">Add Manager</span>
-        </button>
-        <button mat-button (click)="deleteManager()">
-            <mat-icon class="mat-18">delete</mat-icon>
-            <span class="btn-action">Delete</span>
-        </button>
-    </div>
-    <br>
-    
-    <div>
-            <mat-card-content>
-                    <form>
-                            <mat-form-field>
-                                    <mat-label>Device Manager Name</mat-label>
-                                    <input matInput>
-                                </mat-form-field>
-                
-                                <mat-form-field>
-                                    <mat-label>Model</mat-label>
-                                    <input matInput >
-                                </mat-form-field>
-                                <br>
-                                <mat-form-field>
-                                    <mat-label>Manufacturer</mat-label>
-                                    <input matInput >
-                                </mat-form-field>
-                
-                                <mat-form-field>
-                                    <mat-label>Device Type</mat-label>
-                                    <input matInput >
-                                </mat-form-field>
-                                <br>
-                                <mat-form-field>
-                                    <mat-label>Description</mat-label>
-                                    <textarea matInput ></textarea>
-                                </mat-form-field>
-                                <br>
-                    </form>
-                </mat-card-content>
-        
-    </div>
+    <button mat-button (click)="addManager()">
+        <mat-icon class="mat-18">save</mat-icon>
+        <span class="btn-action">Add Manager</span>
+    </button>
+    <button mat-button (click)="deleteManager()">
+        <mat-icon class="mat-18">delete</mat-icon>
+        <span class="btn-action">Delete</span>
+    </button>
+</div>
+<br>
+<div>
+    <ag-grid-angular
+        style="width: 100%; height: 470px;"
+        class="ag-theme-alpine"
+        (gridready)="onGridReady($event)"
+        [gridOptions]="gridOptions"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        rowSelection="multiple"
+        (rowSelected)="onRowSelected($event)"
+        (selectionChanged)="onSelectionChanged($event)"
+        >
+    </ag-grid-angular>
+</div>

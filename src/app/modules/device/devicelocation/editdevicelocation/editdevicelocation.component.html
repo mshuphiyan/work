@@ -1,11 +1,7 @@
 <div>
-    <button mat-button (click)="addLocation()">
+    <button mat-button (click)="editLocation()">
         <mat-icon class="mat-18">save</mat-icon>
         <span class="btn-action">Save</span>
-    </button>
-    <button mat-button (click)="cancel()">
-        <mat-icon class="mat-18">cancel</mat-icon>
-        <span class="btn-action">Cancel</span>
     </button>
     <button mat-button (click)="deleteLocation()">
         <mat-icon class="mat-18">delete</mat-icon>
@@ -18,7 +14,7 @@
         <mat-card-content>
                 <form>
                         <mat-form-field>
-                                <mat-label>Device Manager Name</mat-label>
+                                <mat-label>Device Location</mat-label>
                                 <input matInput>
                             </mat-form-field>
             
