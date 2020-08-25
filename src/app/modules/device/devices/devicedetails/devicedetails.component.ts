@@ -35,9 +35,7 @@ export class DevicedetailsComponent implements OnInit {
   }
 
   updateDevice() {
-    this._snackBar.open("Devices updated successfully.", "action", {
-      duration: 2000,
-    });
+    this.router.navigate(['/app-editdevice']);
   }
 
   deleteDevice() {
