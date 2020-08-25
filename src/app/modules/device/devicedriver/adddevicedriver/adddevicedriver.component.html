@@ -1,1 +1,48 @@
-<p>adddevicedriver works!</p>
+<div>
+    <button mat-button (click)="saveDeviceDriver()">
+        <mat-icon class="mat-18">save</mat-icon>
+        <span class="btn-action">Save</span>
+    </button>
+    <button mat-button (click)="cancel()">
+        <mat-icon class="mat-18">cancel</mat-icon>
+        <span class="btn-action">Cancel</span>
+    </button>
+    <button mat-button (click)="deleteDeviceDriver()">
+        <mat-icon class="mat-18">delete</mat-icon>
+        <span class="btn-action">Delete</span>
+    </button>
+</div>
+<br>
+
+<div>
+        <mat-card-content>
+                <form>
+                        <mat-form-field>
+                                <mat-label>Device Driver Name</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+            
+                            <mat-form-field>
+                                <mat-label>Model</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Manufacturer</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+            
+                            <mat-form-field>
+                                <mat-label>Device Type</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Description</mat-label>
+                                <textarea matInput ></textarea>
+                            </mat-form-field>
+                            <br>
+                </form>
+            </mat-card-content>
+    
+</div>

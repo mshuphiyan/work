@@ -7,6 +7,8 @@ import { DevicelocationComponent } from '../device/devicelocation/devicelocation
 import { AdddevicelocationComponent } from '../device/devicelocation/adddevicelocation/adddevicelocation.component';
 import { EditdevicelocationComponent } from '../device/devicelocation/editdevicelocation/editdevicelocation.component';
 import { DevicedriverComponent } from '../device/devicedriver/devicedriver.component';
+import { AdddevicedriverComponent } from '../device/devicedriver/adddevicedriver/adddevicedriver.component';
+import { EditdevicedriverComponent } from '../device/devicedriver/editdevicedriver/editdevicedriver.component';
 import { DevicemanagerComponent } from '../device/devicemanager/devicemanager.component';
 import { DevicesessionComponent } from '../device/devicesession/devicesession.component';
 import { PtodaComponent } from '../device/ptoda/ptoda.component';
@@ -48,6 +50,12 @@ export const devicesroutes: Routes = [{
     }, {
       path: 'app-devicedriver',
       component: DevicedriverComponent
+    }, {
+      path: 'app-adddevicedriver',
+      component: AdddevicedriverComponent
+    }, {
+      path: 'app-editdevicedriver',
+      component: EditdevicedriverComponent
     }, {
       path: 'app-devicemanager',
       component: DevicemanagerComponent

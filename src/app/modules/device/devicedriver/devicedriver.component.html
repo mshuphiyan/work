@@ -1,1 +1,25 @@
-<p>devicedriver works!</p>
+<div>
+    <button mat-button (click)="addDriver()">
+        <mat-icon class="mat-18">save</mat-icon>
+        <span class="btn-action">Add Driver</span>
+    </button>
+    <button mat-button (click)="deleteDriver()">
+        <mat-icon class="mat-18">delete</mat-icon>
+        <span class="btn-action">Delete</span>
+    </button>
+</div>
+<br>
+<div>
+    <ag-grid-angular
+        style="width: 100%; height: 470px;"
+        class="ag-theme-alpine"
+        (gridready)="onGridReady($event)"
+        [gridOptions]="gridOptions"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        rowSelection="multiple"
+        (rowSelected)="onRowSelected($event)"
+        (selectionChanged)="onSelectionChanged($event)"
+        >
+    </ag-grid-angular>
+</div>
