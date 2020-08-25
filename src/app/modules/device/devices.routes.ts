@@ -12,6 +12,10 @@ import { BatchpredictionComponent } from '../analytics/batchprediction/batchpred
 import { MortalityanalyticsComponent } from '../analytics/mortalityanalytics/mortalityanalytics.component';
 import { ContactsComponent } from '../contacts/contacts.component';
 import { LeadsComponent } from '../leads/leads.component';
+import { PatientsComponent } from '../patients/patients.component';
+import { AddpatientComponent } from '../patients/addpatient/addpatient.component';
+import { EditpatientComponent } from '../patients/editpatient/editpatient.component';
+import { PatientdetailComponent } from '../patients/patientdetail/patientdetail.component';
 
 // import { adddevicesroutes } from './devices/adddevice/adddevice.routes';
 // import { devicedetailsroutes } from './devices/devicedetails/devicedetails.routes';
@@ -55,5 +59,17 @@ export const devicesroutes: Routes = [{
     }, {
       path: 'app-leads',
       component: LeadsComponent
+    }, {
+      path: 'app-patients',
+      component: PatientsComponent
+    }, {
+      path: 'app-addpatient',
+      component: AddpatientComponent
+    }, {
+      path: 'app-editpatient',
+      component: EditpatientComponent
+    }, {
+      path: 'app-patientdetail',
+      component: PatientdetailComponent
     }
 ];
