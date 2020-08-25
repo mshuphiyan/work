@@ -69,7 +69,7 @@ export class DevicesComponent implements OnInit {
   }
 
   deleteDevices() {
-    this._snackBar.open("Devices deleted successfully.", "action", {
+    this._snackBar.open("Devices deleted successfully.", "Close", {
       duration: 2000,
     });
   }

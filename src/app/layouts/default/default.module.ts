@@ -13,6 +13,7 @@ import { DevicemanagerModule } from '../../modules/device/devicemanager/devicema
 import { DevicelocationModule } from '../../modules/device/devicelocation/devicelocation.module';
 import { DevicesessionModule } from '../../modules/device/devicesession/devicesession.module';
 import { PtodaModule } from '../../modules/device/ptoda/ptoda.module';
+import { PatientsModule } from '../../modules/patients/patients.module';
 
 import { DefaultComponent } from './default.component';
 import { DashboardComponent } from '../../modules/dashboard/dashboard.component';
@@ -35,7 +36,8 @@ import { DashboardComponent } from '../../modules/dashboard/dashboard.component'
     DevicelocationModule,
     DevicemanagerModule,
     DevicesessionModule,
-    PtodaModule
+    PtodaModule,
+    PatientsModule
   ]
 })
 export class DefaultModule { }

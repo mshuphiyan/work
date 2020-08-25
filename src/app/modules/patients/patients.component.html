@@ -1,1 +1,30 @@
-<p>patients works!</p>
+<div>
+        <button mat-button flex (click)="addPatient()">
+            <mat-icon class="mat-18">add</mat-icon>
+            <span class="btn-action">Add Patient</span>
+        </button>
+        <button mat-button (click)="deletePatient()">
+            <mat-icon class="mat-18">delete</mat-icon>
+            <span class="btn-action">Delete</span>
+        </button>
+        <button mat-button (click)="refreshPatients()">
+            <mat-icon class="mat-18">loop</mat-icon>
+            <span class="btn-action">Refresh</span>
+        </button>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div>
+    <ag-grid-angular
+        style="width: 100%; height: 470px;"
+        class="ag-theme-alpine"
+        [gridOptions]="gridOptions"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        rowSelection="multiple"
+        (rowSelected)="onRowSelected($event)"
+        >
+    </ag-grid-angular>
+</div>
+
