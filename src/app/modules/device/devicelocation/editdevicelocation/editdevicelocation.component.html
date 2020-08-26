@@ -1,40 +1,41 @@
 <div>
-    <button mat-button (click)="editLocation()">
+    <button mat-flat-button (click)="editLocation()">
         <mat-icon class="mat-18">save</mat-icon>
         <span class="btn-action">Save</span>
     </button>
-    <button mat-button (click)="deleteLocation()">
+    <button mat-flat-button (click)="deleteLocation()">
         <mat-icon class="mat-18">delete</mat-icon>
         <span class="btn-action">Delete</span>
     </button>
 </div>
 <br>
-
+<mat-divider></mat-divider>
+<br>
 <div>
         <mat-card-content>
                 <form>
                         <mat-form-field>
-                                <mat-label>Device Location</mat-label>
+                                <mat-label>Organization</mat-label>
                                 <input matInput>
                             </mat-form-field>
             
                             <mat-form-field>
-                                <mat-label>Model</mat-label>
+                                <mat-label>Facility</mat-label>
                                 <input matInput >
                             </mat-form-field>
                             <br>
                             <mat-form-field>
-                                <mat-label>Manufacturer</mat-label>
+                                <mat-label>Point of Care</mat-label>
                                 <input matInput >
                             </mat-form-field>
             
                             <mat-form-field>
-                                <mat-label>Device Type</mat-label>
+                                <mat-label>Room</mat-label>
                                 <input matInput >
                             </mat-form-field>
                             <br>
                             <mat-form-field>
-                                <mat-label>Description</mat-label>
+                                <mat-label>Bed</mat-label>
                                 <textarea matInput ></textarea>
                             </mat-form-field>
                             <br>

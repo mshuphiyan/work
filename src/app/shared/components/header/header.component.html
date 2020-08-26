@@ -1,8 +1,5 @@
 <mat-toolbar>
     <mat-toolbar-row>
-        <button mat-icon-button (click) = "toggleSideBar()">
-            <mat-icon>menu</mat-icon>
-        </button>
 
         <span>Healthcare Industries Limited</span>
 
@@ -19,7 +16,7 @@
                     </button>
                 </li>
                 <li>
-                        <button mat-button [matMenuTriggerFor]="menu" class="header-btn">
+                        <button mat-flat-button [matMenuTriggerFor]="menu" class="header-btn">
                             <mat-icon class="mat-18">person_outline</mat-icon>
                         </button>
                         <mat-menu #menu="matMenu">

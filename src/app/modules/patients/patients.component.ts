@@ -24,16 +24,11 @@ export class PatientsComponent implements OnInit {
       {headerName: 'Device Id', field: 'make', sortable: true, filter: true, checkboxSelection: true,
       headerCheckboxSelection: true
       },
-      {headerName: 'Device Name', field: 'model' },
-      {headerName: 'Device Status', field: 'price'},
-      {headerName: 'Session Status', field: 'price'},
-      {headerName: 'Device Type', field: 'price'},
-      {headerName: 'Device Manager', field: 'price'},
-      {headerName: 'Manufacturer', field: 'price'},
-      {headerName: 'Model', field: 'price'},
-      {headerName: 'Driver', field: 'price'},
-      {headerName: 'Organization', field: 'price'},
-      {headerName: 'Point of care', field: 'price'},
+      {headerName: 'Patient Name', field: 'model' },
+      {headerName: 'Issuer', field: 'price'},
+      {headerName: 'Date of Birth', field: 'price'},
+      {headerName: 'Gender', field: 'price'},
+      {headerName: 'Description', field: 'price'}
     ];
 
     this.rowData = [

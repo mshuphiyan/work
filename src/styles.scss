@@ -51,6 +51,21 @@ button {
   text-align: center;
   border: none;
   background: none;
+  overflow: hidden;
+}
+
+button:hover {
+  overflow: initial;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 4px;
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
 }
 
 .btn-action {

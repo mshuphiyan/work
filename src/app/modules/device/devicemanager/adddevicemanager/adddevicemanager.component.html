@@ -1,40 +1,22 @@
 <div>
-    <button mat-button (click)="addManager()">
+    <button mat-flat-button (click)="addManager()">
         <mat-icon class="mat-18">save</mat-icon>
-        <span class="btn-action">Save</span>
+        <span class="btn-action">Add</span>
     </button>
-    <button mat-button (click)="cancel()">
+    <button mat-flat-button (click)="cancel()">
         <mat-icon class="mat-18">cancel</mat-icon>
         <span class="btn-action">Cancel</span>
     </button>
-    <button mat-button (click)="deleteManager()">
-        <mat-icon class="mat-18">delete</mat-icon>
-        <span class="btn-action">Delete</span>
-    </button>
 </div>
 <br>
-
+<mat-divider></mat-divider>
+<br>
 <div>
-        <mat-card-content>
-                <form>
+    <mat-card-content>
+        <form>
                         <mat-form-field>
                                 <mat-label>Device Manager Name</mat-label>
                                 <input matInput>
-                            </mat-form-field>
-            
-                            <mat-form-field>
-                                <mat-label>Model</mat-label>
-                                <input matInput >
-                            </mat-form-field>
-                            <br>
-                            <mat-form-field>
-                                <mat-label>Manufacturer</mat-label>
-                                <input matInput >
-                            </mat-form-field>
-            
-                            <mat-form-field>
-                                <mat-label>Device Type</mat-label>
-                                <input matInput >
                             </mat-form-field>
                             <br>
                             <mat-form-field>
@@ -42,7 +24,15 @@
                                 <textarea matInput ></textarea>
                             </mat-form-field>
                             <br>
-                </form>
-            </mat-card-content>
-    
+                            <mat-form-field>
+                                <mat-label>IP Address</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field>
+                                <mat-label>Port Number</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+        </form>
+    </mat-card-content>
 </div>

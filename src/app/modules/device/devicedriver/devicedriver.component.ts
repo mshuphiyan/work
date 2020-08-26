@@ -24,16 +24,11 @@ export class DevicedriverComponent implements OnInit {
       {headerName: 'Device Id', field: 'make', sortable: true, filter: true, checkboxSelection: true,
       headerCheckboxSelection: true
       },
-      {headerName: 'Device Name', field: 'model' },
-      {headerName: 'Device Status', field: 'price'},
+      {headerName: 'Driver Name', field: 'model' },
+      {headerName: 'DDescription', field: 'price'},
       {headerName: 'Session Status', field: 'price'},
-      {headerName: 'Device Type', field: 'price'},
-      {headerName: 'Device Manager', field: 'price'},
-      {headerName: 'Manufacturer', field: 'price'},
-      {headerName: 'Model', field: 'price'},
-      {headerName: 'Driver', field: 'price'},
-      {headerName: 'Organization', field: 'price'},
-      {headerName: 'Point of care', field: 'price'},
+      {headerName: 'Dll File Name', field: 'price'},
+      {headerName: 'Driver Version', field: 'price'}
     ];
 
     this.rowData = [
