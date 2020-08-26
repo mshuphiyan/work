@@ -44,6 +44,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   @include ag-theme-alpine();
 }
 
+.company-name {
+  color: #fff;
+  margin-left: 10px;
+}
+
 button {
   margin-right: 1em;
   width: 10em;
