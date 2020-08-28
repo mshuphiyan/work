@@ -16,6 +16,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { AreaComponent } from './widgets/area/area.component';
 import { CardComponent } from './widgets/card/card.component';
+import { BarComponent } from './widgets/bar/bar.component';
+import { GaugeComponent } from './widgets/gauge/gauge.component';
+import { PieComponent } from './widgets/pie/pie.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +28,9 @@ import { CardComponent } from './widgets/card/card.component';
     SidebarComponent,
     AreaComponent,
     CardComponent,
+    BarComponent,
+    GaugeComponent,
+    PieComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +50,12 @@ import { CardComponent } from './widgets/card/card.component';
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    CardComponent
+    CardComponent,
+    BarComponent,
+    GaugeComponent,
+    PieComponent
   ]
 })
+
+
 export class SharedModule { }
