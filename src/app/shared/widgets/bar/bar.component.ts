@@ -19,8 +19,26 @@ export class BarComponent implements OnInit {
 
   ngOnInit(): void {
     this.chartOptions = {
-      title: {
-        text: 'Bar'
+      chart: {
+        height: 160,
+    },
+    title: {
+        text: null
+    },
+    subtitle: {
+      text: null
+    },
+    tooltip: {
+        split: true,
+    },
+    legend: {
+      enabled: false
+    },
+    credit: {
+      enabled: false
+    },
+    exporting: {
+      enabled: false
     },
 
     xAxis: {

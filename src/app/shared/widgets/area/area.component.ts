@@ -19,11 +19,20 @@ export class AreaComponent implements OnInit {
           type: 'area'
       },
       title: {
-          text: 'Demo'
+          text: null
       },
       subtitle: {
-          text: 'Demo'
+          text: null
       },
+        legend: {
+        enabled: false
+        },
+        credit: {
+        enabled: false
+        },
+        exporting: {
+        enabled: false
+        },
       xAxis: {
           categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
           tickmarkPlacement: 'on',

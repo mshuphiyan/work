@@ -19,7 +19,26 @@ export class PieComponent implements OnInit {
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
-        type: 'pie'
+        type: 'pie',
+        height: 170,
+    },
+    title: {
+        text: null
+    },
+    subtitle: {
+        text: null
+    },
+    tooltip: {
+        split: true,
+    },
+    legend: {
+      enabled: false
+    },
+    credit: {
+      enabled: false
+    },
+    exporting: {
+      enabled: false
     },
 
     plotOptions: {
