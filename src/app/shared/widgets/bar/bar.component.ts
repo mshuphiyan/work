@@ -21,25 +21,25 @@ export class BarComponent implements OnInit {
     this.chartOptions = {
       chart: {
         height: 160,
-    },
-    title: {
+      },
+      title: {
+          text: null
+      },
+      subtitle: {
         text: null
-    },
-    subtitle: {
-      text: null
-    },
-    tooltip: {
-        split: true,
-    },
-    legend: {
-      enabled: false
-    },
-    credit: {
-      enabled: false
-    },
-    exporting: {
-      enabled: false
-    },
+      },
+      tooltip: {
+          split: true,
+      },
+      legend: {
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      exporting: {
+        enabled: false
+      },
 
     xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May']

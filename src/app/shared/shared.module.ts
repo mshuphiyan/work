@@ -19,6 +19,7 @@ import { CardComponent } from './widgets/card/card.component';
 import { BarComponent } from './widgets/bar/bar.component';
 import { GaugeComponent } from './widgets/gauge/gauge.component';
 import { PieComponent } from './widgets/pie/pie.component';
+import { ScatterComponent } from './widgets/scatter/scatter.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { PieComponent } from './widgets/pie/pie.component';
     CardComponent,
     BarComponent,
     GaugeComponent,
-    PieComponent
+    PieComponent,
+    ScatterComponent
   ],
   imports: [
     CommonModule,
@@ -53,7 +55,8 @@ import { PieComponent } from './widgets/pie/pie.component';
     CardComponent,
     BarComponent,
     GaugeComponent,
-    PieComponent
+    PieComponent,
+    ScatterComponent
   ]
 })
 

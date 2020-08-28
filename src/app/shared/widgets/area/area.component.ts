@@ -16,7 +16,8 @@ export class AreaComponent implements OnInit {
   ngOnInit(): void {
     this.chartOptions = {
       chart: {
-          type: 'area'
+          type: 'area',
+          height: 200,
       },
       title: {
           text: null
@@ -27,7 +28,7 @@ export class AreaComponent implements OnInit {
         legend: {
         enabled: false
         },
-        credit: {
+        credits: {
         enabled: false
         },
         exporting: {
@@ -53,12 +54,6 @@ export class AreaComponent implements OnInit {
       tooltip: {
           split: true,
           valueSuffix: ' millions'
-      },
-      credit: {
-        enabled: false
-      },
-      exporting: {
-        enabled: true
       },
       series: [{
           name: 'Asia',

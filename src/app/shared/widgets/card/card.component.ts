@@ -38,7 +38,7 @@ export class CardComponent implements OnInit {
       legend: {
         enabled: false
       },
-      credit: {
+      credits: {
         enabled: false
       },
       exporting: {

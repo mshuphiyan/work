@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px" class="stats-cards" >
-  <mat-card fxFlex="70">
+  <mat-card fxFlex="50">
     <highcharts-chart 
     [Highcharts]="Highcharts"
     [options]="chartOptions"
@@ -7,8 +7,8 @@
     >
     </highcharts-chart>
   </mat-card>
-  <mat-card fxFlex="30">
-      <app-widget-bar></app-widget-bar>
+  <mat-card fxFlex="50">
+      <app-widgets-scatter></app-widgets-scatter>
   </mat-card>
 </div>
 

@@ -34,7 +34,7 @@ export class PieComponent implements OnInit {
     legend: {
       enabled: false
     },
-    credit: {
+    credits: {
       enabled: false
     },
     exporting: {
