@@ -17,8 +17,8 @@ export class AdddevicelocationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addNewDevice = new FormGroup({
-    deviceName: new FormControl(),
+  userProfile = new FormGroup({
+    name: new FormControl(),
     deviceModel: new FormControl(),
     manufacturer: new FormControl(),
     deviceType: new FormControl(),
