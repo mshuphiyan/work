@@ -17,7 +17,6 @@ import { RouterModule } from '@angular/router';
 import { AreaComponent } from './widgets/area/area.component';
 import { CardComponent } from './widgets/card/card.component';
 import { BarComponent } from './widgets/bar/bar.component';
-import { GaugeComponent } from './widgets/gauge/gauge.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { ScatterComponent } from './widgets/scatter/scatter.component';
 
@@ -30,7 +29,6 @@ import { ScatterComponent } from './widgets/scatter/scatter.component';
     AreaComponent,
     CardComponent,
     BarComponent,
-    GaugeComponent,
     PieComponent,
     ScatterComponent
   ],
@@ -54,7 +52,6 @@ import { ScatterComponent } from './widgets/scatter/scatter.component';
     AreaComponent,
     CardComponent,
     BarComponent,
-    GaugeComponent,
     PieComponent,
     ScatterComponent
   ]
