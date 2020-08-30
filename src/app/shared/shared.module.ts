@@ -9,6 +9,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -22,7 +26,7 @@ import { ScatterComponent } from './widgets/scatter/scatter.component';
 import { TimeseriesComponent } from './widgets/timeseries/timeseries.component';
 import { BubblesComponent } from './widgets/bubbles/bubbles.component';
 import { RadarComponent } from './widgets/radar/radar.component';
-
+import { ChatboxComponent } from './widgets/chatbox/chatbox.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,8 @@ import { RadarComponent } from './widgets/radar/radar.component';
     ScatterComponent,
     TimeseriesComponent,
     BubblesComponent,
-    RadarComponent
+    RadarComponent,
+    ChatboxComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +54,11 @@ import { RadarComponent } from './widgets/radar/radar.component';
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatCardModule
   ],
   exports: [
     HeaderComponent,
@@ -62,7 +71,8 @@ import { RadarComponent } from './widgets/radar/radar.component';
     ScatterComponent,
     TimeseriesComponent,
     BubblesComponent,
-    RadarComponent
+    RadarComponent,
+    ChatboxComponent
   ]
 })
 

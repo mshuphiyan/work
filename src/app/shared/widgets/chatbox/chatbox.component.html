@@ -1,1 +1,18 @@
-<p>chatbox works!</p>
+
+    <div style="width: 100%; height: 150px; display: block;">
+        <mat-card-header>
+            <mat-card-title>Start Chat</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            <mat-icon class="mat-18">message</mat-icon>
+            <form>
+                <mat-form-field>
+                    <mat-label>Message</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <br>
+                <button mat-flat-button (click)="sendMessage()">Send</button>
+            </form>
+        </mat-card-content>
+        </div>
