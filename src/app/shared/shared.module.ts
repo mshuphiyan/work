@@ -19,6 +19,8 @@ import { CardComponent } from './widgets/card/card.component';
 import { BarComponent } from './widgets/bar/bar.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { ScatterComponent } from './widgets/scatter/scatter.component';
+import { TimeseriesComponent } from './widgets/timeseries/timeseries.component';
+import { BubblesComponent } from './widgets/bubbles/bubbles.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ScatterComponent } from './widgets/scatter/scatter.component';
     CardComponent,
     BarComponent,
     PieComponent,
-    ScatterComponent
+    ScatterComponent,
+    TimeseriesComponent,
+    BubblesComponent
   ],
   imports: [
     CommonModule,
@@ -53,7 +57,9 @@ import { ScatterComponent } from './widgets/scatter/scatter.component';
     CardComponent,
     BarComponent,
     PieComponent,
-    ScatterComponent
+    ScatterComponent,
+    TimeseriesComponent,
+    BubblesComponent
   ]
 })
 
