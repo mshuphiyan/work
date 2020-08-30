@@ -21,6 +21,7 @@ import { PieComponent } from './widgets/pie/pie.component';
 import { ScatterComponent } from './widgets/scatter/scatter.component';
 import { TimeseriesComponent } from './widgets/timeseries/timeseries.component';
 import { BubblesComponent } from './widgets/bubbles/bubbles.component';
+import { RadarComponent } from './widgets/radar/radar.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { BubblesComponent } from './widgets/bubbles/bubbles.component';
     PieComponent,
     ScatterComponent,
     TimeseriesComponent,
-    BubblesComponent
+    BubblesComponent,
+    RadarComponent
   ],
   imports: [
     CommonModule,
@@ -59,7 +61,8 @@ import { BubblesComponent } from './widgets/bubbles/bubbles.component';
     PieComponent,
     ScatterComponent,
     TimeseriesComponent,
-    BubblesComponent
+    BubblesComponent,
+    RadarComponent
   ]
 })
 
