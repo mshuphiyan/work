@@ -12,12 +12,10 @@ export class UserprofileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addNewDevice = new FormGroup({
-    deviceName: new FormControl(),
-    deviceModel: new FormControl(),
-    manufacturer: new FormControl(),
-    deviceType: new FormControl(),
-    description: new FormControl()
+  userProfile = new FormGroup({
+    firstname: new FormControl(),
+    lastname: new FormControl(),
+    language: new FormControl()
   });
 
   updateUser() {
